@@ -66,15 +66,13 @@ jobs:
     - name: Check out Git repository
       uses: actions/checkout@v1
 
-    - name: Install Node.js & NPM
-      uses: actions/setup-node@v2
+    - uses: actions/setup-node@master
       with:
-        node-version: '14.2.0'
+        node-version: 21.3.0
     - name: install dependencies
       working-directory: ./Electron
       run: |
-        npm i -g @electron/build-tools
-        npm install --save-dev
+        npm install
 
     - name: build
       working-directory: ./Electron
