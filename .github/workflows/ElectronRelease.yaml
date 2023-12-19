@@ -4,6 +4,8 @@ on:
     inputs:
       version:
         required: true
+        
+permissions: write-all
 
 jobs:
   create_release:
