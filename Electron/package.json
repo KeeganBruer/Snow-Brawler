@@ -7,7 +7,7 @@
   "scripts": {
     "start": "electron-forge start",
     "prepackage": "cp -r ../GameEngine ./src",
-    "package": "electron-forge package --platform=win32",
+    "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx .",
