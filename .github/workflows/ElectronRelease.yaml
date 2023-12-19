@@ -73,6 +73,7 @@ jobs:
     - name: install dependencies
       working-directory: ./Electron
       run: |
+        npm i -g @electron/build-tools
         npm install --save-dev
 
     - name: build
